@@ -121,6 +121,7 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
+ done
 
 
 
@@ -134,7 +135,7 @@ Use the command called cat on the file to show its contents.
 Describe what happened below.
 ----------
 
-
+the full text of the file was unleashed
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -146,8 +147,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
+head books/other/pg1232.txt
 
-
+Title: The Prince
 ==========
 18. Using the same file again!
 
@@ -158,7 +160,12 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below.
 ----------
 
+tail books/other/pg1232.txt
 
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 ==========
 19. Using the same file...
@@ -170,7 +177,7 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
 
-
+more books/other/pg1232.txt  when i pressed spoace bar it continued to produce the rest of the text one percent at a time and when i used less it would go the opposite way. q would return back to my directory.
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
@@ -178,21 +185,23 @@ Write the command that you used below.  Describe what spacebar and q does after 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
 
-
+if i wish to read a lengthy document but only the key parts I would use less and sort it out.
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
-
+52639
+wc books/other/pg1232.txt
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
-
+5063
+wc -l books/other/pg1232.txt
 
 ==========
 23.  Make sure you're in the books/other folder.  Copy all of the txt files from that folder to your home directory using wildcard matching.
 
 Write the command that you used below.
 ----------
+cp *.txt ~
