@@ -37,7 +37,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+foo.txt
 
 ==========
 7. Create another new file using touch.
@@ -52,7 +52,8 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+-rw-rw-rw- 1 dave dave 0 Feb 26 21:33 bar.txt
+-rw-rw-rw- 1 dave dave 0 Feb 26 21:27 foo.txt
 
 
 ==========
@@ -61,7 +62,11 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
+cp bar.txt baz.xt
 
+ls -l
+
+bar.txt  baz.txt  foo.txt
 
 
 ==========
@@ -70,12 +75,18 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
 ==========
+rm bar.txt
+
+ls
+baz.txt  foo.txt
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
+ mv foo.txt qux.txt
+ ls
+baz.txt  qux.txt
 
 
 ==========
@@ -90,7 +101,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+ rmdir my_files
+rmdir: failed to remove 'my_files': Directory not empty
 
 
 ==========
@@ -98,7 +110,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
+ rm my_files
+rm: cannot remove 'my_files': Is a directory
 
 
 ==========
