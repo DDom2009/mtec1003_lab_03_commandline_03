@@ -53,13 +53,17 @@ cd ~
 What commands did you use to do this?
 ----------
 
-
+touch copy_to_backup.sh
 
 ==========
 5. What are the permissions on your copy_to_backup.sh.
 
 What command did you use to find the permissions?
 ----------
+
+-rw-rw-rw- 1 dave dave      0 Mar  5 22:17 copy_to_backup.sh
+
+ls -l copy_to_backup.sh
 
 
 
@@ -68,17 +72,20 @@ What command did you use to find the permissions?
 
 What commands did you use to do this?  What was the output?
 ----------
+chmod u+x copy_to_backup
 
+-rwxrw-rw- 1 dave dave      0 Mar  5 22:17 copy_to_backup.sh
 
 
 ==========
 7. Try executing the file!
 
-$ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
+./copy_to_backup.sh
 
+nothing the file is empty
 
 
 ==========
@@ -87,7 +94,7 @@ What command did you use to try to execute the file?  What happens?
 What command did you use to do this?
 ----------
 
-
+nano
 
 ==========
 9. In your file, write the commands to do the following
